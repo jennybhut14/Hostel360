@@ -6,8 +6,6 @@ const flash = require('express-flash');
 const session = require('express-session');
 mongoose.connect('mongodb://127.0.0.1:27017/projectDB').then(function(){console.log("connected")});
 
-
-
 const signupSchema=new mongoose.Schema({
   studentid:{
     type:Number,
